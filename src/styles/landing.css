@@ -115,7 +115,7 @@ h1.typing::after {
   height: 1.25em;
   background: white;
   display: inline-block;
-  animation: cursor-blink 1.5s steps(2) infinite;
+  animation: cursor-blink .5s step-end infinite alternate;
 }
 
 .text-accent {
@@ -123,7 +123,7 @@ h1.typing::after {
 }
 
 @keyframes cursor-blink {
-  0% {
+  50% {
     opacity: 0;
   }
 }
