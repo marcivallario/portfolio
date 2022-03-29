@@ -1,0 +1,163 @@
+#landing {
+    min-height: 100vh;
+    background-image: url(../assets/images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.welcome {
+ position: relative;
+ display: inline-block;
+ cursor: pointer;
+ outline: none;
+ border: 0;
+ vertical-align: middle;
+ text-decoration: none;
+ background: transparent;
+ padding: 0;
+ font-size: inherit;
+ font-family: inherit;
+}
+
+button.welcome {
+ width: 12rem;
+ height: auto;
+}
+
+button.welcome .circle {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: relative;
+ display: block;
+ margin: 0;
+ width: 3rem;
+ height: 3rem;
+ background: #e8b600;
+ border-radius: 1.625rem;
+}
+
+button.welcome .circle .icon {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ bottom: 0;
+ margin: auto;
+ background: #fff;
+}
+
+button.welcome .circle .icon.arrow {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ left: 0.625rem;
+ width: 1.125rem;
+ height: 0.125rem;
+ background: none;
+}
+
+button.welcome .circle .icon.arrow::before {
+ position: absolute;
+ content: "";
+ top: -0.28rem;
+ right: 0.0625rem;
+ width: 0.625rem;
+ height: 0.625rem;
+ border-top: 0.125rem solid #262525;
+ border-right: 0.125rem solid #262525;
+ transform: rotate(45deg);
+}
+
+button.welcome .button-text {
+ transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ padding: 0.75rem 0;
+ margin: 0 0 0 1.85rem;
+ color: #e8b600;
+ font-family: monospace;
+ font-weight: 700;
+ line-height: 1.6;
+ text-align: center;
+}
+
+button:hover .circle {
+ width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+ background: #262525;
+ transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+ color: #262525;
+}
+
+.typing {
+    width: 40%;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 1.25em;
+    color: white;
+    text-align: center;
+}
+
+h1.typing::after {
+  content: "";
+  width: 3px;
+  height: 1.25em;
+  background: white;
+  display: inline-block;
+  animation: cursor-blink 1.5s steps(2) infinite;
+}
+
+.text-accent {
+    color: #e8b600;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+    #landing {
+        background-image: url(../assets/images/banner-mobile.png);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #landing {
+        display: block;
+    }
+
+    .welcome {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .typing {
+        color: #262525;
+        font-weight: bold;
+        width: 80%;
+        font-size: 5vw;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1.typing::after {
+        background: #262525
+    }
+}
