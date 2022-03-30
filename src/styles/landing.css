@@ -50,10 +50,6 @@ h1.typing::after {
   animation: cursor-blink .5s step-end infinite alternate;
 }
 
-.text-accent {
-    color: #e8b600;
-}
-
 @keyframes cursor-blink {
   50% {
     opacity: 0;
