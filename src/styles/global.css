@@ -12,6 +12,7 @@ html, body {
   font-size: 16px;
   scroll-behavior: smooth;
   min-width: 300px;
+  min-height: 450px;
   box-sizing: border-box;
 }
 
@@ -37,4 +38,22 @@ p {
 
 .img-container img{
   width: 100%;
+}
+
+.fade-appear,
+.fade-enter {
+opacity: 0;
+z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+opacity: 1;
+transition: opacity 450ms linear 250ms;
+}
+.fade-exit {
+opacity: 1;
+}
+.fade-exit.fade-exit-active {
+opacity: 0;
+transition: opacity 150ms linear;
 }
