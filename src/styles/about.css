@@ -11,11 +11,6 @@
     align-items: center;
 }
 
-#info-about h2 {
-    text-transform: lowercase;
-    font-size: 4em;
-}
-
 #headshot {
     position: relative
 }
