@@ -1,0 +1,136 @@
+nav {
+  background-color:#DEDEDE;
+  padding: 0 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+nav a {
+  color: #262525;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.menu, 
+.submenu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.logo {
+  font-size: 16px;
+  font-family: 'Arabic Font 2013';
+  padding: 7.5px 10px 7.5px 0;
+}
+
+.item {
+  padding: 10px;
+  margin-left: 50px;
+  order: 2;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.item a:hover {
+  color: rgba(232, 182, 0, 1);
+}
+
+#about-submenu:hover, #about-submenu:hover::after {
+    color: rgba(232, 182, 0, 1);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+
+.menu li.subitem a {
+  padding: 15px;
+}
+
+.toggle {
+  order: 1;
+  font-size: 15px;
+}
+
+.active .item {
+  display: block;
+}
+
+.submenu {
+  display: none;
+}
+
+.submenu-active .submenu {
+  display: block;
+}
+
+.has-submenu i {
+  font-size: 12px;
+}
+
+.has-submenu > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  color: #262525;
+  padding-left: 5px;
+}
+
+.subitem a {
+  padding: 10px 15px;
+}
+
+.submenu-active {
+  background-color: #DEDEDE;
+  border-radius: 3px;
+}
+
+@media all and (min-width: 768px) {
+  .menu {
+    justify-content: center;
+    align-items: flex-end;     
+    flex-wrap: nowrap;
+    background: none;
+  }
+
+  nav a {
+    font-size: .85rem;
+  }
+  .logo {
+    order: 0;
+    flex: 1;
+  }
+  .item {
+    order: 1;
+    position: relative;
+    display: block; 
+    width: auto;
+  }
+  .submenu-active .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    background-color: #DEDEDE;
+  }
+  .toggle {
+    display: none;
+  }
+  .submenu-active {
+    border-radius: 0;
+  }
+}

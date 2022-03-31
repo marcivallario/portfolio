@@ -30,6 +30,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.text-accent {
+    color: #e8b600;
+}
+
 p {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -56,4 +60,9 @@ opacity: 1;
 .fade-exit.fade-exit-active {
 opacity: 0;
 transition: opacity 150ms linear;
+}
+
+.section-heading {
+    text-transform: lowercase;
+    font-size: 4em;
 }

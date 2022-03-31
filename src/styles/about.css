@@ -1,0 +1,25 @@
+#about {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#about-content {
+    align-items: center;
+}
+
+#headshot {
+    position: relative
+}
+
+@media (max-width: 576px) {
+    #info-about h2 {
+        font-size: 13vw;
+        text-align: center;
+        padding-top: .25em;
+        padding-bottom: .05em; 
+    }
+}
