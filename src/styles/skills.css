@@ -68,6 +68,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 3em;
+    text-align: center;
 }
 
 #other-skills ul {
@@ -106,5 +107,9 @@
 
     #skills-content {
         gap: 1em;
+    }
+
+    #other-skills {
+        text-align: left;
     }
 }
