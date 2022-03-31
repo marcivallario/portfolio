@@ -1,6 +1,7 @@
 import Landing from "./components/Landing";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Header from "./components/Header";
 import { Switch, Route } from "react-router-dom";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import "./styles/global.css"
@@ -16,6 +17,7 @@ function App() {
         >
           <Switch>
             <Route path="/about">
+              <Header />
               <About />
               <Skills />
             </Route>

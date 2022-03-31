@@ -8,7 +8,7 @@ function Skills() {
                     <h2 className="section-heading">Skills</h2>
                 </div>
                 <div className="row" id="skills-content">
-                    <div className="col">
+                    <div className="col-12 col-md-6" >
                         <h4 className="skill-title">front-end:</h4>
                         <div className="logo-grid">
                             <div><h6>HTML</h6><img src={require('../assets/images/skills/language-framework-logos/html.png')} alt="HTML" /></div>
@@ -19,7 +19,7 @@ function Skills() {
                             <div><h6>Redux</h6><img src={require('../assets/images/skills/language-framework-logos/redux.png')} alt="Redux" /></div>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col-12 col-md-6">
                         <h4 className="skill-title">back-end:</h4>
                         <div className="logo-grid">
                             <div><h6>Ruby</h6><img src={require('../assets/images/skills/language-framework-logos/ruby.png')} alt="Ruby" /></div>

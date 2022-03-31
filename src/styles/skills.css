@@ -13,7 +13,6 @@
 }
 
 #skills-content {
-    gap: 1em;
     justify-content: space-between;
 }
 
@@ -101,7 +100,11 @@
         margin: 0 .5em;
     }
 
-    #other-skills ul {
-        
+    #skills {
+        padding: 4em 0;
+    }
+
+    #skills-content {
+        gap: 1em;
     }
 }
