@@ -1,0 +1,60 @@
+.card {
+    width: 80%;
+    box-shadow: 0px 10px 40px rgb(0 0 0 / 20%);
+    border: none;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: none;
+}
+
+button.project-links {
+    background-color: #e8b600;
+    border: 3px solid #e8b600;
+    padding: .1em 1em;
+    border-radius: 5px;
+    transition: .5s;
+    width: 30%;
+}
+
+button.project-links a {
+    color: #262525;
+    text-transform: uppercase;
+    font-size: .75em;
+    letter-spacing: .15em;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+button.project-links:hover {
+    background-color: transparent;
+    transition: .5s;
+}
+
+button.project-links:active {
+    font-style: italic;
+}
+
+.slider-right > div, .slider-left > div {
+    background-color: #e8b600;
+    border: none !important;
+}
+
+@media (max-width: 992px) {
+    .card-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button.project-links {
+        width: 100%;
+    }
+}

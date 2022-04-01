@@ -1,0 +1,20 @@
+#projects {
+    min-height: 100vh;
+    padding-top: 115px;
+}
+
+.react-3d-carousel {
+    width: 100%;
+}
+
+
+
+.react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content {
+    box-shadow: none;
+}
+
+@media (max-width: 767px) {
+    .card {
+        width: 95%
+    }
+}
