@@ -13,8 +13,25 @@
     box-shadow: none;
 }
 
+#card-grid {
+        display: none;
+    }
+
 @media (max-width: 767px) {
+    #card-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        padding: 5%;
+    }
+
     .card {
-        width: 95%
+        width: 100%;
+    }
+
+    #card-carousel {
+        display: none;
     }
 }

@@ -10,7 +10,7 @@ function Landing() {
 
     return (
         <div className="page" id="landing">
-                <h1 className="typing">Hi, I'm <span class="text-accent">Marci</span> and I'm a <span className="text-accent">Full-Stack Web Developer.</span></h1>
+                <h1 className="typing">Hi, I'm <span className="text-accent">Marci</span> and <span className="avoidwrap">I'm a <span className="text-accent">Full-Stack Developer.</span></span></h1>
                 <button className="welcome" onClick={handleClick}>Welcome</button>
 
         </div>

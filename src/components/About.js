@@ -15,6 +15,12 @@ function About() {
                     <p>Since then, I've been hooked. Creating new web applications and applying new libraries &#38; technologies has scratched an itch in my brain that I've been dying to satisfy. I have a permanent, life-long attachment to my to-do list and a color-coordinated calendar. I'm always adding new tools to my tool chest!</p>
 
                     <p>When I'm offline, you can find me practicing guitar (much to the dismay of my neighbors), trading my computer keys for piano keys, or gushing over fabrics at the sewing store.</p>
+
+                    <p>I love talking new technologies and new opportunities 	&#8212; let's chat about tomorrow's possibilities.</p>
+                    <div className="logo-row">
+                        <a href="https://github.com/marcivallario" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/marcivallario/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    </div>
                 </div>
             </div>
         </section>

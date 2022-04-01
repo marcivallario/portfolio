@@ -42,6 +42,10 @@ button.welcome:active {
     text-align: center;
 }
 
+span.avoidwrap { 
+    display:inline-block; 
+}
+
 h1.typing::after {
   content: "";
   width: 3px;
