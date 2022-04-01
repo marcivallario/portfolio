@@ -1,3 +1,4 @@
+import { Email } from "react-obfuscate-email";
 import { useRef, useEffect, useState } from 'react';
 import '../styles/header.css'
 
@@ -54,7 +55,12 @@ function Header() {
                 </li>
                 <li className="item"><a href="/projects">Projects</a></li>
                 <li className="item"><a href="https://dev.to/marcivallario" target="_blank">Blog</a></li>
-                <li className="item"><a href="#contact">Contact</a></li>
+                <li className="item"><Email 
+                        email="marcival615@gmail.com"
+                        subject="Let's Connect!"
+                        >
+                        Contact
+                    </Email></li>
                 <li className="toggle" ref={toggleRef} onClick={toggleMenu}><a><i className="fas fa-bars"></i></a></li>
                 </ul>
             </nav>

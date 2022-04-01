@@ -38,7 +38,18 @@ function ProjectsContainer() {
 
     return (
         <section id="projects" class="container-fluid">
-            <Carousel slides={slides} autoplay={true} interval={5000} />
+            <div class="row" id="card-carousel">
+                <Carousel slides={slides} autoplay={true} interval={5000} />
+            </div>
+            <div class="row" id="card-grid">
+                {projects.map((project, index) => <ProjectCard 
+                key={index}
+                img={project.img} 
+                title={project.title} 
+                description={project.description} 
+                demo={project.demo}
+                github={project.github}/>)}
+            </div>
         </section>
     )
 }

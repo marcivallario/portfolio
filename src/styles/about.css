@@ -15,11 +15,36 @@
     position: relative
 }
 
+.logo-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.bi-envelope, .bi-github, .bi-linkedin {
+    color: #262525;
+    transition: .5s;
+    font-size: 1.5em;
+}
+
+.bi-envelope:hover, .bi-github:hover, .bi-linkedin:hover {
+    color: #e8b600;
+    transition: .5s;
+}
+
 @media (max-width: 576px) {
     #info-about h2 {
         font-size: 13vw;
         text-align: center;
         padding-top: .25em;
         padding-bottom: .05em; 
+    }
+}
+
+@media (max-width: 992px) {
+     .logo-row {
+        justify-content: center;
+        font-size: 2em;
+        gap: 10%;
     }
 }

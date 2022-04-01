@@ -14,6 +14,7 @@
     justify-content: space-around;
     align-items: center;
     border-top: none;
+    background-color: inherit;
 }
 
 button.project-links {
@@ -55,6 +56,6 @@ button.project-links:active {
     }
 
     button.project-links {
-        width: 100%;
+        width: 70%;
     }
 }
