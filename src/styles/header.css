@@ -28,7 +28,6 @@ nav a {
 
 .item {
   padding: 10px;
-  margin-left: 50px;
   order: 2;
   width: 100%;
   text-align: center;
@@ -46,7 +45,7 @@ nav a {
 .menu {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -101,10 +100,10 @@ nav a {
 
 @media all and (min-width: 768px) {
   .menu {
-    justify-content: center;
     align-items: flex-end;     
     flex-wrap: nowrap;
     background: none;
+    gap: 40px
   }
 
   nav a {

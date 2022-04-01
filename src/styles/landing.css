@@ -16,8 +16,9 @@ button.welcome {
     background-color: transparent;
     border: 3px solid #e8b600;
     color: #e8b600;
-    font-family: monospace;
-    padding: .5em 1em;
+    font-family: 'Arabic Font 2013';
+    text-transform: lowercase;
+    padding: .6em 1em .4em 1em;
     letter-spacing: .1em;
     transition: .5s;
 }

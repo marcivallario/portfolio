@@ -44,16 +44,16 @@ function Header() {
         <header>
             <nav>
                 <ul className="menu" ref={menuRef}>
-                <li className="logo"></li>
                 <li className="item"><a href="/">Home</a></li>
                 <li className="item has-submenu" onClick={toggleItem} ref={submenuRef}>
                     <a id="about-submenu" tabIndex="0">About</a>
                     <ul className="submenu">
-                        <li className="subitem"><a href="#about">Bio</a></li>
-                        <li className="subitem"><a href="#skills">Skills</a></li>
+                        <li className="subitem"><a href="/about#about">Bio</a></li>
+                        <li className="subitem"><a href="/about#skills">Skills</a></li>
                     </ul>
                 </li>
-                <li className="item"><a href="#work">Work</a></li>
+                <li className="item"><a href="/projects">Projects</a></li>
+                <li className="item"><a href="https://dev.to/marcivallario" target="_blank">Blog</a></li>
                 <li className="item"><a href="#contact">Contact</a></li>
                 <li className="toggle" ref={toggleRef} onClick={toggleMenu}><a><i className="fas fa-bars"></i></a></li>
                 </ul>
