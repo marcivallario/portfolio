@@ -60,7 +60,6 @@
 
 .logo-grid h6 {
     text-align: center;
-    margin-top: 5px;
 }
 
 #other-skills {
@@ -96,7 +95,7 @@
     margin: 0 1em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #other-skills li:not(:last-child)::after {
         content: '·';
         margin: 0 .5em;
@@ -113,4 +112,9 @@
     #other-skills {
         text-align: left;
     }
+
+    .logo-grid h6 {
+        margin-top: 12px;
+    }
+
 }
