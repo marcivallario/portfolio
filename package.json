@@ -2,8 +2,9 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": "16.x"
+  "engines": { 
+    "node": "16.x",
+    "npm": "8.x"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
@@ -11,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "3d-react-carousal": "^5.0.0",
     "bootstrap-icons": "^1.8.1",
+    "create-app-react": "^1.0.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-obfuscate-email": "^1.0.12",
