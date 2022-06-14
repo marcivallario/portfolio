@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "engines": { 
+  "engines": {
     "node": "16.x",
     "npm": "8.x"
   },
@@ -17,7 +17,7 @@
     "react-dom": "^17.0.2",
     "react-obfuscate-email": "^1.0.12",
     "react-router-dom": "^5.3.0",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.1",
     "react-transition-group": "^4.4.2",
     "web-vitals": "^2.1.4"
   },
