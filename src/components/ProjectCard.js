@@ -1,7 +1,6 @@
 import "../styles/projectcard.css"
 
 function ProjectCard({ img, title, description, github, demo, liveSite}) {
-    // console.log('liveSite: ', liveSite)
     return (
         <div className="card">
             <img className="card-img-top" src={img} alt="Project Overview" title={title} />
