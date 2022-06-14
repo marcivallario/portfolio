@@ -1,3 +1,8 @@
+import IconButton from '@mui/material/IconButton';
+import Link from '@mui/material/Link';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import LaunchIcon from '@mui/icons-material/Launch';
 import "../styles/projectcard.css"
 
 function ProjectCard({ img, title, description, github, demo, liveSite}) {
@@ -9,9 +14,28 @@ function ProjectCard({ img, title, description, github, demo, liveSite}) {
                 <p className="card-text">{description}</p>
             </div>
             <div className="card-footer">
-                <button className="project-links"><a href={github} target="_blank" className="card-link">Github</a></button>
-                <button className="project-links"><a href={demo} target="_blank" className="card-link">Video Demo</a></button>
-                {liveSite ? <button className="project-links"><a href={liveSite} target="_blank" className="card-link">Live Site</a></button> : null}
+                {github ? 
+                    <Link href={github} target="_blank" title="GitHub Repo">
+                        <IconButton>
+                            <GitHubIcon />
+                        </IconButton>
+                    </Link> 
+                    : null}
+                {demo ? 
+                    <Link href={demo} target="_blank" title="Video Demo">
+                        <IconButton>
+                            <YouTubeIcon />
+                        </IconButton>
+                    </Link> 
+                    : null}
+
+                {liveSite ? 
+                    <Link href={liveSite} target="_blank" title="Live Demo">
+                        <IconButton>
+                            <LaunchIcon />
+                        </IconButton>
+                    </Link> 
+                    : null}
             </div>
         </div>
     )
