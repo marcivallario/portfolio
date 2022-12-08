@@ -11,6 +11,7 @@ function ProjectsContainer() {
             technologies: ["React", "Ruby on Rails", "Redux"],
             demo: "https://www.youtube.com/watch?v=tnjVqnLqaeM&ab_channel=MarciVallario",
             github: "https://github.com/marcivallario/trekcheck-co", 
+            liveSite: 'https://trekcheck-co.herokuapp.com/'
         }, 
         {
             img: require('../assets/images/projects/shapeup.png'),
