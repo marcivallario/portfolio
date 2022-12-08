@@ -19,7 +19,7 @@ function ProjectsContainer() {
             description: "A workout generator where users can randomly generate and save exercises for a complete full body workout.",
             demo: "https://www.youtube.com/watch?v=srVEAH1MKKs&ab_channel=MarciVallario",
             github: "https://github.com/marcivallario/shapeup",
-            // REPLACE // liveSite: 'https://shape-up-2022.herokuapp.com/'
+            liveSite: 'https://shape-up-fitness.herokuapp.com/'
         }, 
         {
             img: require('../assets/images/projects/zest.png'),
