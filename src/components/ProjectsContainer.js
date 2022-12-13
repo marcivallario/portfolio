@@ -10,7 +10,7 @@ function ProjectsContainer() {
             description: "TrekCheck is an app built by a former travel organizer, for travel organizers. Here, organizers can track arrangements made for employees and store traveler profiles for easy access.",
             technologies: ["React", "Ruby on Rails", "Redux"],
             demo: "https://www.youtube.com/watch?v=tnjVqnLqaeM&ab_channel=MarciVallario",
-            github: "https://github.com/marcivallario/trekcheck-co", 
+            github: "https://github.com/marcivallario/trekcheck", 
             liveSite: 'https://trekcheck-co.herokuapp.com/'
         }, 
         {
